@@ -16,7 +16,7 @@
     <title>BookStore</title>
 </head>
 
-<body onload="toDashboard()">
+<body onload="toDashboard()" style="background-color: #d9c0f5">
 
 
 
@@ -56,14 +56,15 @@
     </div>
 </header>
 
-<main>
+<main style="background-color: rgba(210,135,232,0.76)">
     <!--        <iframe style="width: 100%; height: calc(100vh - 70px)" src="orders.html" class="container-fluid" name="frame"></iframe>-->
 
     <section id="customer">
         <div class="top-container container-fluid mt-2">
             <div class="row d-flex justify-content-evenly">
                 <h2 class="col-6">Manage Customers</h2>
-                <div class="col-2 btn btn-primary col-4 col-md-3 col-lg-2 disabled" id="saveCustomerBtn">Add Customer
+                <div class="col-2 btn btn-success
+                 col-4 col-md-3 col-lg-2 disabled" id="saveCustomerBtn">Add Customer
                     +
                 </div>
             </div>
@@ -82,7 +83,7 @@
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <label for="customerNameTxt" class="form-label">Name</label>
-                    <input type="text" class="form-control " id="customerNameTxt" placeholder="Amal Perera">
+                    <input type="text" class="form-control " id="customerNameTxt" placeholder="Kasun Silva">
                     <small
                             class="text-danger"
                             id="cusNameErr"
@@ -92,7 +93,7 @@
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <label for="customerEmailTxt" class="form-label">Email</label>
-                    <input type="text" class="form-control " id="customerEmailTxt" placeholder="Amal@gmail.com">
+                    <input type="text" class="form-control " id="customerEmailTxt" placeholder="kasun@gmail.com">
                     <small
                             class="text-danger"
                             id="cusEmailErr"
@@ -105,7 +106,7 @@
             <div class="row mt-3 d-flex justify-content-evenly">
                 <div class="form-outline col-6">
                     <input type="search" class="form-control" id="searchCustomerTxt"
-                           placeholder="Search Customer">
+                           placeholder="Search Customer Here">
                 </div>
                 <div class="btn btn-warning col-6 col-md-3 col-lg-2" id="updateCustomerBtn">Update Customer</div>
             </div>
@@ -135,7 +136,7 @@
         <div class="container-fluid">
             <div class="row d-flex justify-content-around mt-3">
 
-                <div class="card text-bg-warning mb-3 col-12 col-md-6 col-lg-4" style="max-width: 18rem;">
+                <div class="card text-bg-secondary mb-3 col-12 col-md-6 col-lg-4" style="max-width: 18rem;">
                     <div class="card-header" id="dateTxt">2023-04-26</div>
                     <div class="card-body">
                         <h5 class="card-title">Total Revenue</h5>
@@ -143,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="card text-bg-success mb-3 col-12 col-md-6 col-lg-4" style="max-width: 18rem;">
+                <div class="card text-bg-info mb-3 col-12 col-md-6 col-lg-4" style="max-width: 18rem;">
                     <div class="card-header">Orders</div>
                     <div class="card-body">
                         <h5 class="card-title">No of orders in today</h5>
@@ -155,7 +156,7 @@
                     <div class="card-header">Online*</div>
                     <div class="card-body">
                         <h5 class="card-title">Cashier</h5>
-                        <h2>Nimal Perera</h2>
+                        <h2>Prasad Silva</h2>
                     </div>
                 </div>
 
@@ -225,23 +226,23 @@
                     <div class="col-12 ">
                         <label for="pOdescTxt" class="form-label">Product</label>
                         <input type="text" class="form-control " disabled id="pOdescTxt"
-                               placeholder="Harry Potter 01">
+                               placeholder="Sherlock Holmes 01">
                     </div>
 
                     <div class="col-12 ">
                         <label for="pOPriceTxt" class="form-label">Price</label>
                         <input type="text" class="form-control " disabled id="pOPriceTxt"
-                               placeholder="$ 149.00">
+                               placeholder="$ 177.00">
                     </div>
 
                     <div class="col-12 ">
                         <label for="pOqtyOnHandTxt" class="form-label">Qty On Hand</label>
-                        <input type="text" class="form-control mb-4 " disabled id="pOqtyOnHandTxt" placeholder="20">
+                        <input type="text" class="form-control mb-4 " disabled id="pOqtyOnHandTxt" placeholder="60">
                     </div>
 
                     <div class="col-12 ">
                         <label for="pOqtyTxt" class="form-label">Qty</label>
-                        <input type="text" class="form-control mb-4 "  id="pOqtyTxt" placeholder="20">
+                        <input type="text" class="form-control mb-4 "  id="pOqtyTxt" placeholder="60">
                     </div>
 
 
@@ -249,14 +250,14 @@
 
                 <div class="card col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-evenly border border-dark mb-3">
 
-                    <h3>Total is : $ <span class="price" id="totalPriceTxt">149.99</span></h3>
+                    <h3>Total is : $ <span class="price" id="totalPriceTxt">183.99</span></h3>
 
                     <div class="col-12 ">
                         <label for="discountTxt" class="form-label">Discount</label>
                         <input type="text" class="form-control " id="discountTxt" placeholder="2.5%">
                     </div>
 
-                    <h2 class="text-danger" id="subTotal">SubTotal is : $ <span class="sub-tot">139.00</span></h2>
+                    <h2 class="text-danger" id="subTotal">SubTotal is : $ <span class="sub-tot">121.00</span></h2>
 
                     <div class="row col-12 d-flex justify-content-evenly mt-3">
                         <div class="btn btn-warning col-3 disabled" id="addToCartBtn">Add +</div>
@@ -310,7 +311,7 @@
                 <div class="col-12 col-md-6 col-lg-8 mb-3">
                     <label for="PDescTxt" class="form-label">Description</label>
                     <input type="text" class="form-control " id="PDescTxt"
-                           placeholder="Harry Potter 01">
+                           placeholder="Sherlock Holmes 01">
                     <small
                             class="text-danger"
                             id="PDescTxtErr"

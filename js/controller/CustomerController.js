@@ -37,6 +37,7 @@ export class CustomerController {
             toastr.error('customer id repeated...');
             console.log('customer id repeated...');
         }
+        document.getElementById("exampleFormControlInput1").text("");
     }
 
     // Method to update an existing customer
